@@ -1,0 +1,6 @@
+﻿namespace Louer.Application
+{
+    public class Class1
+    {
+    }
+}

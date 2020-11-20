@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LxQkCkVLsJ5FMChPdJBf1ST9ew3kTwy2w6NcoVGojMGlhdMTC6cmdimAm0yh0JmzjEYZ+dZpTKOA781odRNNzw==",
+  "success": true,
+  "projectFilePath": "C:\\Projetos\\louer-api-csharp\\Louer\\Louer.Application\\Louer.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\erick\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\erick\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
