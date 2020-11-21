@@ -126,6 +126,7 @@ Desktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
+.vs/
 
 # Mac desktop service store files
 .DS_Store
