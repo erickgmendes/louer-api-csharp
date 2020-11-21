@@ -1,6 +1,7 @@
 C:\Projetos\louer-api-csharp\Louer\Louer.Domain\bin\Debug\netstandard2.0\Louer.Domain.deps.json
 C:\Projetos\louer-api-csharp\Louer\Louer.Domain\bin\Debug\netstandard2.0\Louer.Domain.dll
 C:\Projetos\louer-api-csharp\Louer\Louer.Domain\bin\Debug\netstandard2.0\Louer.Domain.pdb
+C:\Projetos\louer-api-csharp\Louer\Louer.Domain\obj\Debug\netstandard2.0\Louer.Domain.csprojAssemblyReference.cache
 C:\Projetos\louer-api-csharp\Louer\Louer.Domain\obj\Debug\netstandard2.0\Louer.Domain.AssemblyInfoInputs.cache
 C:\Projetos\louer-api-csharp\Louer\Louer.Domain\obj\Debug\netstandard2.0\Louer.Domain.AssemblyInfo.cs
 C:\Projetos\louer-api-csharp\Louer\Louer.Domain\obj\Debug\netstandard2.0\Louer.Domain.csproj.CoreCompileInputs.cache
