@@ -1,9 +1,0 @@
-C:\Projetos\louer-api-csharp\Louer\Louer.Infra\bin\Debug\netstandard2.0\Louer.Infra.deps.json
-C:\Projetos\louer-api-csharp\Louer\Louer.Infra\bin\Debug\netstandard2.0\Louer.Infra.dll
-C:\Projetos\louer-api-csharp\Louer\Louer.Infra\bin\Debug\netstandard2.0\Louer.Infra.pdb
-C:\Projetos\louer-api-csharp\Louer\Louer.Infra\obj\Debug\netstandard2.0\Louer.Infra.csprojAssemblyReference.cache
-C:\Projetos\louer-api-csharp\Louer\Louer.Infra\obj\Debug\netstandard2.0\Louer.Infra.AssemblyInfoInputs.cache
-C:\Projetos\louer-api-csharp\Louer\Louer.Infra\obj\Debug\netstandard2.0\Louer.Infra.AssemblyInfo.cs
-C:\Projetos\louer-api-csharp\Louer\Louer.Infra\obj\Debug\netstandard2.0\Louer.Infra.csproj.CoreCompileInputs.cache
-C:\Projetos\louer-api-csharp\Louer\Louer.Infra\obj\Debug\netstandard2.0\Louer.Infra.dll
-C:\Projetos\louer-api-csharp\Louer\Louer.Infra\obj\Debug\netstandard2.0\Louer.Infra.pdb
