@@ -1,7 +1,8 @@
 CREATE TABLE cliente (
 	id_cliente INT(18) AUTO_INCREMENT,
+	id_tipo_cliente INT(18) NOT NULL,
+	id_tipo_pessoa INT(18) NOT NULL,	
 	data_cadastro DATETIME  NOT NULL,
-	tipo_cliente TINYINT NOT NULL,
 	tipo_pessoa TINYINT NOT NULL,
 	nome VARCHAR(255) NOT NULL,
 	razao_social VARCHAR(255),
@@ -15,5 +16,7 @@ CREATE TABLE cliente (
 	cep VARCHAR(9) NOT NULL,
 	uf VARCHAR(2) NOT NULL,
 	observacoes TEXT,
-	CONSTRAINT pk_cliente PRIMARY KEY (id_cliente)
+	CONSTRAINT pk_cliente PRIMARY KEY (id_cliente),
+	FOREIGN KEY fk_tipo_cliente_cliente (id_tipo_cliente) REFERENCES tipo_cliente(id_tipo_cliente),
+	FOREIGN KEY fk_tipo_pessoa_cliente (id_tipo_pessoa) REFERENCES tipo_pessoa(id_tipo_pessoa)
 ) ENGINE=INNODB;

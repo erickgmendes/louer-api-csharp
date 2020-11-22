@@ -4,6 +4,6 @@ CREATE TABLE cliente_telefone (
 	ddd VARCHAR(2) NOT NULL,
 	numero VARCHAR(10) NOT NULL,
 	tipo TINYINT NOT NULL,
-	PRIMARY KEY (id_cliente_telefone),
-	FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
+	PRIMARY KEY pk_cliente_telefone (id_cliente_telefone),
+	FOREIGN KEY fk_cliente_telefone_cliente (id_cliente) REFERENCES cliente(id_cliente)
 ) ENGINE=INNODB;

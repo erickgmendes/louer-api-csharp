@@ -4,6 +4,6 @@ CREATE TABLE cliente_referencia (
 	nome VARCHAR(255) NOT NULL,
 	telefone VARCHAR(50) NOT NULL,
 	afinidade VARCHAR(50) NOT NULL,
-	PRIMARY KEY (id_cliente_referencia),
-	FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
+	PRIMARY KEY pk_cliente_referencia (id_cliente_referencia),
+	FOREIGN KEY fk_cliente_referencia_cliente (id_cliente) REFERENCES cliente(id_cliente)
 ) ENGINE=INNODB;
