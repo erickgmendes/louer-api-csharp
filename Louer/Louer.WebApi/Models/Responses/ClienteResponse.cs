@@ -1,4 +1,6 @@
-﻿namespace Louer.WebApi.Models.Responses
+﻿using System;
+
+namespace Louer.WebApi.Models.Responses
 {
     public class ClienteResponse
     {
@@ -6,9 +8,9 @@
 
         public DateTime DataCadastro { get; set; }
 
-        public TipoCliente TipoCliente { get; set; }
+        public string TipoCliente { get; set; }
 
-        public TipoPessoa TipoPessoa { get; set; }
+        public string TipoPessoa { get; set; }
 
         public string RazaoSocial { get; set; }
 

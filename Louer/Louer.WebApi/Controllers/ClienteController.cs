@@ -1,9 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Louer.WebApi.Models.Responses;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Louer.WebApi.Controllers
 {
@@ -11,7 +7,7 @@ namespace Louer.WebApi.Controllers
     {
         public ClienteResponse Get(int id)
         {
-
+            return null;
         }
 
         /*

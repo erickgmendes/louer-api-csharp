@@ -1,15 +1,10 @@
+using Louer.Infra;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using MySqlConnection = MySql.Data.MySqlClient.MySqlConnection;
 
 namespace Louer.WebApi
 {
@@ -28,8 +23,16 @@ namespace Louer.WebApi
             //services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"));
             services.AddControllers();
 
+            //services.AddTransient<MySqlConnection>(_ => new MySqlConnection(Configuration["ConnectionStrings:DefaultConnection"]));
+
+            //services.AddCors();
+
+            //services.AddDbContext<LouerContexto>(options => options.UseMySQL(Configuration.GetConnectionString("DefaultConnection")));
+
+            //services.AddMvc();
+
             // Register the Swagger generator, defining 1 or more Swagger documents
-            
+
             services.AddSwaggerGen();
             // Register the Swagger generator, defining 1 or more Swagger documents
             //services.AddSwaggerGen(c =>
@@ -59,7 +62,7 @@ namespace Louer.WebApi
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             // Enable middleware to serve generated Swagger as a JSON endpoint.
-            
+
             //app.UseSwagger();
             app.UseSwagger(c =>
             {
