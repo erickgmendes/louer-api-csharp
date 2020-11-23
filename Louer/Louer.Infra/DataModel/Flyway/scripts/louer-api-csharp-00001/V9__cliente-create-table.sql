@@ -1,22 +1,25 @@
 CREATE TABLE cliente (
-	id_cliente INT(18) AUTO_INCREMENT,
-	id_tipo_cliente INT(18) NOT NULL,
-	id_tipo_pessoa INT(18) NOT NULL,	
-	data_cadastro DATETIME  NOT NULL,
-	tipo_pessoa TINYINT NOT NULL,
-	nome VARCHAR(255) NOT NULL,
-	razao_social VARCHAR(255),
-	cpf_cnpj VARCHAR(18) NOT NULL,
-	inscricao VARCHAR(25),
-	endereco VARCHAR(255) NOT NULL,
-	numero VARCHAR(30) NOT NULL,
-	bairro VARCHAR(255) NOT NULL,
-	cidade VARCHAR(255) NOT NULL,
-	complemento VARCHAR(255),
-	cep VARCHAR(9) NOT NULL,
-	uf VARCHAR(2) NOT NULL,
-	observacoes TEXT,
-	CONSTRAINT pk_cliente PRIMARY KEY (id_cliente),
-	FOREIGN KEY fk_tipo_cliente_cliente (id_tipo_cliente) REFERENCES tipo_cliente(id_tipo_cliente),
-	FOREIGN KEY fk_tipo_pessoa_cliente (id_tipo_pessoa) REFERENCES tipo_pessoa(id_tipo_pessoa)
-) ENGINE=INNODB;
+	id_cliente NUMBER NOT NULL,
+	id_tipo_cliente NUMBER NOT NULL,
+	id_tipo_pessoa NUMBER NOT NULL,
+	data_cadastro DATE  NOT NULL,
+	tipo_pessoa NUMBER NOT NULL,
+	nome VARCHAR2(255) NOT NULL,
+	razao_social VARCHAR2(255),
+	cpf_cnpj VARCHAR2(18) NOT NULL,
+	inscricao VARCHAR2(25),
+	endereco VARCHAR2(255) NOT NULL,
+	numero VARCHAR2(30) NOT NULL,
+	bairro VARCHAR2(255) NOT NULL,
+	cidade VARCHAR2(255) NOT NULL,
+	complemento VARCHAR2(255),
+	cep VARCHAR2(9) NOT NULL,
+	uf VARCHAR2(2) NOT NULL,
+	observacoes TEXT
+);
+
+ALTER TABLE cliente ADD CONSTRAINT pk_cliente PRIMARY KEY (id_cliente);
+
+ALTER TABLE cliente ADD CONSTRAINT fk_cliente_tipo_cliente FOREIGN KEY (id_tipo_cliente) REFERENCES tipo_cliente(id_tipo_cliente);
+
+ALTER TABLE cliente ADD CONSTRAINT fk_cliente_tipo_pessoa FOREIGN KEY (id_tipo_pessoa) REFERENCES tipo_pessoa(id_tipo_pessoa);

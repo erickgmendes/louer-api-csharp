@@ -1,4 +1,4 @@
-INSERT INTO tipo_email (descricao) VALUES ('Pessoal');
-INSERT INTO tipo_email (descricao) VALUES ('Comercial');
+INSERT INTO tipo_email (id_tipo_email, descricao) VALUES (1, 'Pessoal');
+INSERT INTO tipo_email (id_tipo_email, descricao) VALUES (2, 'Comercial');
 
 COMMIT;

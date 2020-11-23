@@ -1,6 +1,10 @@
 CREATE TABLE tipo_cliente (
-	id_tipo_cliente INT(18) AUTO_INCREMENT,
-	descricao VARCHAR(255) NOT NULL,
+	id_tipo_cliente NUMBER NOT NULL,
+	descricao VARCHAR2(255) NOT NULL,
 	CONSTRAINT pk_tipo_cliente PRIMARY KEY (id_tipo_cliente),
 	CONSTRAINT uk_tipo_cliente_descricao UNIQUE KEY (descricao)
-) ENGINE=INNODB;
+);
+
+ALTER TABLE tipo_cliente ADD CONSTRAINT pk_tipo_cliente PRIMARY KEY (id_tipo_cliente);
+
+ALTER TABLE tipo_cliente ADD CONSTRAINT uk_tipo_cliente_descricao UNIQUE KEY (descricao)

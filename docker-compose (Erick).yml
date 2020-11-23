@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  oracle-db:
+    image: "oracleinanutshell/oracle-xe-11g"
+    container_name: "Louer"
+    ports:
+      - "40024:22" 
+      - "41523:1521"

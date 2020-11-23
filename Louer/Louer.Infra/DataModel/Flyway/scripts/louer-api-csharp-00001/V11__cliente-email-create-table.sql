@@ -1,8 +1,10 @@
 CREATE TABLE cliente_email (
-	id_cliente_email INT(18) AUTO_INCREMENT,
-	id_cliente INT(18) NOT NULL,
-	endereco VARCHAR(255) NOT NULL,
-	tipo TINYINT NOT NULL,
-	PRIMARY KEY pk_cliente_email (id_cliente_email),
-	FOREIGN KEY fk_cliente_email_cliente (id_cliente) REFERENCES cliente(id_cliente)
-) ENGINE=INNODB;
+	id_cliente_email NUMBER NOT NULL,
+	id_cliente NUMBER NOT NULL,
+	endereco VARCHAR2(255) NOT NULL,
+	tipo_email NUMBER NOT NULL
+);
+
+ALTER TABLE cliente_email ADD CONSTRAINT pk_cliente_email PRIMARY KEY (id_cliente_email);
+
+ALTER TABLE cliente_email ADD CONSTRAINT fk_cliente_email_cliente FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)

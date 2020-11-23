@@ -1,4 +1,4 @@
-INSERT INTO tipo_pessoa (descricao) VALUES ('Física');
-INSERT INTO tipo_pessoa (descricao) VALUES ('Jurídica');
+INSERT INTO tipo_pessoa (id_tipo_pessoa, descricao) VALUES (1, 'Física');
+INSERT INTO tipo_pessoa (id_tipo_pessoa, descricao) VALUES (2, 'Jurídica');
 
 COMMIT;
